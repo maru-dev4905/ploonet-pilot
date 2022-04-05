@@ -1,15 +1,13 @@
-/* common */
-
 main{
     background-color: #F3F3F3;
-    height: calc(100vh - 80px - 140px);
+    min-height: calc(100vh - 80px - 146px);
     margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* common */
+
 
 /* header */
 
@@ -22,26 +20,68 @@ header{
 header .inner{
     max-width: calc(100% - 74px);
 }
-header .inquiry-btn{
-    color: #76F68A;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-}
 
 /* header */
 
 
 /* section - login */
 
-.login{
+.container.fail{
+    border: 1px solid #FF0000;
+}
+.container.fail .fail-text{
+    opacity: 1;
+    visibility: visible;
+}
+.container{
     width: calc(100% - 40px);
     max-width: 512px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
-    height: 512px;
+    /* height: 512px; */
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 68px;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+}
+.container h2{
+    font-size: 23px;
+    color: #222;
+    margin-bottom: 43px;
+}
+.container input,
+.container textarea{
+    background-color: #F8FBFF;
+    border: 1px solid #f8f8f8;
+}
+.container p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #9d9d9d;
+    text-align: center;
+    line-height: 1.75;
+    margin-top: 40px;
+}
+.container .col + button{
+    margin-top: 5px;
+}
+.container .fail-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    bottom: -25px;
+    opacity: 0;
+    visibility: hidden;
+}
+.container.fail .fail-text{
+    opacity: 1;
+    visibility: visible;
 }
 
 /* section - login */
@@ -51,10 +91,10 @@ header .inquiry-btn{
 
 footer{
     background-color: #f3f3f3;
-    /* padding: 68px 0; */
     margin-top: 0;
-    height: 140px;
-    padding: 0;
+    padding: 68px 0;
+    /* height: 140px; */
+    /* padding: 0; */
     display: flex;
     align-items: center;
     justify-content: center;

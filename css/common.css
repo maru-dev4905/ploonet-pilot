@@ -1,0 +1,245 @@
+
+.inner{
+    width: calc(100% - 40px);
+    max-width: 1302px;
+    margin: 0 auto;
+}
+
+.sec-text.al-right{
+    text-align: right;
+}
+.sec-text.al-center{
+    text-align: center;
+}
+.sec-text strong{
+    font-size: 34px;
+    font-weight: 600;
+    color: #00CE9D;
+    display: block;
+    margin-bottom: 15px;
+}
+.sec-text h2{
+    font-family: "Noto Sans Kr";
+    font-weight: 600;
+    color: #111;
+    font-size: 37px;
+    line-height: 1.35;
+}
+.sec-text p{
+    margin-top: 37px;
+    font-size: 17px;
+    color: #333;
+    line-height: 1.35;
+    font-weight: 300;
+}
+.sec-text h3{
+    font-size: 33px;
+    font-family: "Noto Sans Kr";
+    font-weight: 600;
+    color: #222;
+}
+.sec-text span{
+    font-size: 19px;
+    color: #00CE9D;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+.back-btn{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+.back-btn i{
+    width: 9px;
+    height: 18px;
+    background: url("../images/icons/ico-leftWhiteArrow.svg") no-repeat center / cover;
+    display: block;
+}
+
+.blue-style-btn{
+    padding: 0 41px;
+    height: 43px;
+    background: #2957DA;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 7px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.green-style-btn{
+    padding: 0 41px;
+    height: 43px;
+    background: #76F68A;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 7px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.green-style-btn2{
+    height: 43px;
+    background: transparent;
+    color: #76F68A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.blue-style-btn:hover{
+    opacity: 0.7;
+}
+.green-style-btn:hover,
+.green-style-btn2:hover{
+    opacity: 0.7;
+}
+
+
+.col{
+    margin-bottom: 30px;
+    width: 450px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+label{
+    font-size: 13px;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 11px;
+    display: block;
+}
+input{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #F7F7F7;
+    padding: 0 16px;
+    color: #222;
+    transition: 0.3s ease;
+    border: 1px solid #f7f7f7;
+}
+input::placeholder{
+    color: #9d9d9d;
+}
+textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 135px;
+    min-height: 135px;
+    max-height: 135px;
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 6px;
+    padding: 16px;
+    transition: 0.3s ease;
+    color: #222;
+}
+textarea::placeholder{
+    color: #9d9d9d;
+}
+input:focus,
+textarea:focus{
+    border: 1px solid #4575FF !important;
+}
+.passwordViewBtn{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transition: 0.3s ease;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.passwordViewBtn i{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url("../images/icons/ico-eyeClose.svg") no-repeat center / cover;
+    transition: 0.3s ease;
+}
+.passwordViewBtn:hover i{
+    background: url("../images/icons/ico-eyeActiveClose.svg") no-repeat center / cover;
+}
+.passwordViewBtn.open i{
+    background: url("../images/icons/ico-eyeOpen.svg") no-repeat center / cover;
+}
+.passwordViewBtn.open:hover i{
+    background: url("../images/icons/ico-eyeActiveOpen.svg") no-repeat center / cover;
+}
+
+
+
+/* header */
+
+body.scroll header{
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 25px 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000000000;
+    background-color: transparent;
+    width: 100vw;
+    padding: 53px 0;
+    transition: 0.3s ease;
+}
+header .inner{
+    width: calc(100% - 40px);
+    max-width: calc(100% - 168px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo a{
+    width: 137px;
+    height: 34px;
+    background: url("../images/common/logo.svg") no-repeat center / cover;
+    display: block;
+}
+header .link-group{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .link-group a{
+    width: 122px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 7px;
+    color: #111;
+    font-weight: 400;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+header .link-group a:hover{
+    opacity: 0.6;
+}
+
+/* header */
