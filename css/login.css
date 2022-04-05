@@ -1,0 +1,71 @@
+/* common */
+
+main{
+    background-color: #F3F3F3;
+    height: calc(100vh - 80px - 140px);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* common */
+
+/* header */
+
+header{
+    background-color: #2957DA;
+    height: 80px;
+    padding: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+header .inner{
+    max-width: calc(100% - 74px);
+}
+header .inquiry-btn{
+    color: #76F68A;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* header */
+
+
+/* section - login */
+
+.login{
+    width: calc(100% - 40px);
+    max-width: 512px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+    height: 512px;
+}
+
+/* section - login */
+
+
+/* footer */
+
+footer{
+    background-color: #f3f3f3;
+    /* padding: 68px 0; */
+    margin-top: 0;
+    height: 140px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .copyright{
+    font-size: 10px;
+    color: #4575FF;
+    text-align: center;
+}
+footer::after{
+    display: none;
+}
+
+/* footer */

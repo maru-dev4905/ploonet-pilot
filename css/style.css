@@ -46,7 +46,20 @@
     margin-bottom: 10px;
     display: block;
 }
-
+.back-btn{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+.back-btn i{
+    width: 9px;
+    height: 18px;
+    background: url("../images/icons/ico-leftWhiteArrow.svg") no-repeat center / cover;
+    display: block;
+}
 
 /* common */
 
@@ -71,6 +84,7 @@ header{
 header .inner{
     width: calc(100% - 40px);
     max-width: calc(100% - 168px);
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
