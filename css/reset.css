@@ -57,6 +57,9 @@ input,textarea,button{
     border: none;
     background: none;
 }
+button{
+	cursor: pointer;
+}
 
 
 body::-webkit-scrollbar {

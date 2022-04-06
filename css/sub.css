@@ -3,10 +3,21 @@ main{
     min-height: calc(100vh - 80px - 146px);
     margin-top: 80px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 68px;
 }
-
+.btn-group{
+    margin-bottom: 28px;
+    display: flex;
+    gap: 18px;
+}
+.btn-group button{
+    padding: 0;
+    width: 160px;
+    height: 52px;
+}
 
 
 /* header */
@@ -45,7 +56,6 @@ header .inner{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 68px;
     transition: 0.3s ease;
     border: 1px solid transparent;
 }
@@ -109,3 +119,92 @@ footer::after{
 }
 
 /* footer */
+
+
+/* section - projectList */
+
+.tab-content-container{
+    position: relative;
+    width: 512px;
+    height: 596px;
+}
+.projectCont{
+    padding: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+.projectCont.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s 0.3s ease;
+}
+.projectList{
+    padding: 0 30px;
+    width: 100%;
+}
+.projectList li{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    transition: 0.3s ease;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+.projectList li:hover{
+    background-color: #F8FBFF;
+}
+.projectList li img{
+    width: 54px;
+    height: 54px;
+    margin-right: 15px;
+}
+.projectList p{
+    margin-top: 0;
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+.projectList span{
+    margin-top: 0;
+    font-size: 12px;
+    color: #6C6C6C;
+    font-weight: 400;
+}
+.projectList .loader{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 32px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 10px;
+}
+.projectList .loader span{
+    color: #4575FF;
+}
+.projectList .list-btn-group{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 32px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.projectList li:hover .list-btn-group{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* section - projectList */

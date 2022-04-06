@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/sub.css">
 
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -33,16 +33,16 @@
         <section class="container fail">
             <h2>로그인</h2>
             <div class="col">
-                <input type="text" placeholder="아이디를 입력해주세요.">
+                <input class="idInput" type="text" placeholder="아이디를 입력해주세요.">
             </div>
             <div class="col">
-                <input type="password" placeholder="비밀번호를 입력해주세요.">
+                <input class="pwInput" type="password" placeholder="비밀번호를 입력해주세요.">
                 <button class="passwordViewBtn">
                     <i></i>
                 </button>
                 <p class="fail-text">아이디 혹은 비밀번호를 확인해주세요.</p>
             </div>
-            <button class="blue-style-btn">로그인</button>
+            <button class="gray-style-btn login-btn">로그인</button>
             <p>
                 비밀번호가 기억나지 않으시다면 
                 <br>
@@ -58,5 +58,6 @@
     </footer>
 
     <script src="./js/passwordView.js"></script>
+    <script src="./js/loginStyle.js"></script>
 </body>
 </html>
