@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/popup.css">
 
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -264,7 +265,138 @@
         </p>
     </footer>
 
+    <div class="dim"></div>
+    <div class="popup addProjectPopup">
+        <button class="close-btn">
+            <i></i>
+        </button>
+        <h3>
+            <span class="fc-blue">Step1</span>
+            템플릿 선택
+        </h3>
+        <div class="col">
+            <div class="select">
+                <div class="current-select">
+                    <span>1:1</span>
+                    <p>SNS post</p>
+                    <i></i>
+                </div>
+                <ul class="select-list">
+                    <li>
+                        <button class="current">
+                            <span>1:1</span>
+                            <p>SNS post</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <span>4:3</span>
+                            <p>Full screen</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <span>16:9</span>
+                            <p>Youtube</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <span>9:16</span>
+                            <p>SNS story</p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="blue-style-btn next-btn">다음</button>
+    </div>
+    <div class="popup addPPTPagePopup">
+        <button class="close-btn">
+            <i></i>
+        </button>
+        <h3>
+            <span class="fc-blue">Step2</span>
+            PPT로 페이지 생성하기
+        </h3>
+        <div class="col">
+            <input type="file" id="fileInput">
+            <label for="fileInput">
+                <div class="cont">
+                    <i class="upload-icon"></i>
+                    <p>
+                        <span>PPT 업로드</span>
+                    </p>
+                </div>
+            </label>
+        </div>
+        <div class="btn-group">
+            <button class="addBtn gray-style-btn">만들기</button>
+            <button class="directlyBtn blue-style-btn">직접 만들래요</button>
+        </div>
+    </div>
+    <div class="popup removeCheckPopup">
+        <button class="close-btn">
+            <i></i>
+        </button>
+        <div class="col">
+            <h3>3월 12일자 유튜브 업로드</h3>
+            <span>01:20:45</span>
+            <p>
+                프로젝트를 삭제하시겠습니까?
+                <br>
+                삭제된 프로젝트는 다시 불러올 수 없습니다.
+            </p>
+        </div>
+        <button class="blue-style-btn next-btn">확인</button>
+    </div>
+    <div class="popup removePopup">
+        <button class="close-btn">
+            <i></i>
+        </button>
+        <div class="col">
+            <h3>
+                <span class="fc-green">3월 12일자 유튜브 업로드</span>가
+                <br>
+                삭제되었습니다.
+            </h3>
+        </div>
+        <button class="blue-style-btn">확인</button>
+    </div>
+    <div class="popup copyPopup">
+        <button class="close-btn">
+            <i></i>
+        </button>
+        <div class="col">
+            <h3>
+                <span class="fc-green">3월 12일자 유튜브 업로드</span>가
+                <br>
+                복사되었습니다.
+            </h3>
+        </div>
+        <button class="blue-style-btn">확인</button>
+    </div>
+    <div class="popup downloadPopup">
+        <button class="close-btn">
+            <i></i>
+        </button>
+        <div class="col">
+            <h3>메타휴먼 스튜디오</h3>
+            <span>01:20:45</span>
+            <p>
+                영상을 내려받는 중입니다.
+                <br>
+                프로젝트 목록에서 진행사항을 확인할 수 있습니다.
+            </p>
+        </div>
+        <button class="blue-style-btn">확인</button>
+    </div>
 
+
+
+    <script src="./js/popup.js"></script>
     <script src="./js/tab.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/fileInput.js"></script>
 </body>
 </html>

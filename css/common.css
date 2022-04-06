@@ -7,6 +7,12 @@
 .fc-gray{
     color: #9d9d9d !important;
 }
+.fc-blue{
+    color: #2957DA !important;
+}
+.fc-green{
+    color: #37E552 !important;
+}
 
 .sec-text.al-right{
     text-align: right;
@@ -97,6 +103,20 @@
 }
 .download-btn:hover i{
     background: url("../images/icons/ico-downloadActive.svg") no-repeat center / cover;
+}
+.upload-icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icons/ico-upload.svg") no-repeat center / cover;
+    margin: 0 auto;
+}
+.file-icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icons/ico-file.svg") no-repeat center / cover;
+    margin: 0 auto;
 }
 
 .white-style-btn{
@@ -491,3 +511,114 @@ header .link-group a:hover{
 }
 
 /* loder */
+
+
+
+
+
+/* select */
+
+.select{
+    position: relative;
+    width: 100%;
+}
+.select.show{
+
+}
+.select.show .current-select i{
+    transform: rotate(180deg);
+}
+.select .current-select{
+    height: 64px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #F8FBFF;
+    border-radius: 6px;
+    padding: 0 25px;
+    cursor: pointer;
+    z-index: 10;
+}
+.select span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+    min-width: 50px;
+}
+.select p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c6c6c;
+    margin: 0 !important;
+}
+.select .current-select i{
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("../images/icons/ico-selectArrow.svg") no-repeat center / cover;
+    transition: 0.3s ease;
+    margin-left: auto;
+}
+.select-list{
+    /* padding-top: 64px; */
+    border-radius: 0 0 6px 6px;
+    background-color: #E4EFFF;
+    width: 100%;
+    padding: 18px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    height: 0;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+.select.show .select-list{
+    height: 170px;
+    opacity: 1;
+    padding: 18px 0;
+}
+.select-list li{
+    padding: 0 25px;
+    opacity: 0;
+    height: 0;
+    transition: 0.3s ease;
+}
+.select.show .select-list li{
+    height: 21px;
+    opacity: 1;
+}
+.select-list li button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s ease;
+    height: 0;
+    visibility: hidden;
+}
+.select.show .select-list li button{
+    height: 21px;
+    visibility: visible;
+}
+.select-list li button:hover{
+    opacity: 0.6;
+}
+.select span{
+    text-align: left;
+}
+.select .select-list button.current::after{
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #37E552;
+    position: absolute;
+    right: 24px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+}
+
+/* select */
